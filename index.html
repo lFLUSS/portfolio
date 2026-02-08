@@ -79,11 +79,11 @@
                     <div class="about__data">
                         <h2 class="section__title">About Me </h2>
                         <p class="about__discription">
-                            მევარ 16 წლის ვებ დეველოპერი და დიზაინერი, რომელიც ცხოვრობს საქართველოში, თბილისში,
-                         სპეციალიზირებულია ბიზნესებისთვის ვებსაიტების შექმნაში.მაქვს დასრულებული step IT academy - ის ორ წლიანი კურსი სადაც შევისწავლე beckend ის და frontend ის მრავალი ენები, 
-                         რომლებიც ქვევით არის ჩამოთვლილი. კურსის დამთავრების შემდეგ ავიღე    მათი სერთიპიკატი
-                         . გავლილი მაქვს ბევრი ონლაინ კურსები. იხილეთ ჩემი პორტფოლიო, 
-                         რომელიც მოიცავს თანამედროვე ვებსაიტების დიზაინს და სხვა.
+                            მევარ 16 წლის ვებ დეველოპერი და დიზაინერი,ამჟამად ვსწავლობ 126-ე საჯარო სკოლაში. .მაქვს დასრულებული step IT academy - ის ორ წლიანი კურსი სადაც შევისწავლე beckend ის და frontend ის მრავალი ენები, 
+                         რომლებიც ქვევით არის ჩამოთვლილი. კურსის დამთავრების შემდეგ ავიღე   მათი სერთიპიკატი
+                         . გავლილი მაქვს ბევრი ონლაინ კურსები. ამჟამად ვცდილობ გაანვითარდე და შევისწავლო სხვადასხვა backend  ენები როგორებიცაა node.js, c++, java და სხვა.
+                         ვიცი ინგლისური b2 დონეზე და გერმანული b1 დონეზე. 
+
                         </p>
                         <a href="#contact" class="button button__ghost">Contact Me</a>
                     </div>
@@ -103,6 +103,8 @@
                             <li class="about__item">figma</li>
                             <li class="about__item">alittle react</li>
                             <li class="about__item">entity framework core</li>
+                            <li class="about__item">MS SQL SERVER Programming and Administration</li>
+
 
                             
                         </ul>
@@ -138,26 +140,7 @@
                     </div>
                     </article>
 
-                    <article class="project__card">
-                    <img src="assets/img/project2.jpg" alt="project image" class="project__img">
-
-                    <div class="project__content">
-                        <h3 class="project__title">Business Website</h3>
-                        <p class="project__description">
-                        Responsive business website with clean UI and animations.
-                        </p>
-
-                        <div class="project__buttons">
-                        <a href="#" class="project__link">
-                            <i class="ri-github-fill"></i> Code
-                        </a>
-                        <a href="#" class="project__link">
-                            <i class="ri-external-link-line"></i> Live
-                        </a>
-                        </div>
-                    </div>
-       
-                </article>
+               
                     <article class="project__card">
                     <img src="assets/img/Screenshot 2026-02-06 200932.png" alt="project image" class="project__img">
 
@@ -268,14 +251,38 @@
                         <input type="text" placeholder="Names" name= "user_name"required class="contact__input">
                         <input type="email" placeholder=" Emails"name= "user_email" required class="contact__input">                  
                     
-                    <textarea name="Message"  cols="0" rows="7" placeholder="Your Message" class="contact__input"></textarea>
+                        
+                    <textarea name="user_message"  cols="0" rows="7" placeholder="Message" class="contact__input"></textarea>
                     <button type="submit" class="button">Send Message</button>
+                    <p class="contact__message" id="contact-message"></p>   
+                 
                 </form>
-
+                <div class="contact__content grid">
+                    <div class="contact__data">
+                        <address class="contact__address">
+                            <i class="ri-mail-fill"></i>
+                            <span>levanimatsaberide@gmail.com</span>
+                        </address>
+                        <address class="contact__address">
+                            <i class="ri-smartphone-fill"></i>
+                            <span>+995 599 460 056</span>
+                        </address>
+                        <address class="contact__address">
+                            <i class="ri-map-pin-fill"></i>
+                            <span>tbilisi, georgia</span>
+                        </address>
+                        
+                        
+                    </div>
+                   
+                </div>
+            </div>
         </section>
 
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.min.js "></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
         
     <script src="assets/js/main.js"></script>
 </body>

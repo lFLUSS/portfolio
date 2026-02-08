@@ -27,3 +27,26 @@ const typedHome = new Typed('#home-typed', {
     backdelay: 2000,
     cursorChar: '_', 
 })
+
+const shadowheader = () => {
+    const header = document.getElementById('header')
+    this.scrollY >= 50 ? header.classList.add('shadow-header')
+                        : header.classList.remove('shadow-header')
+}
+window.addEventListener('scroll', shadowheader)
+
+
+
+const contactForm = document.getElementById('contact-form'),
+            contactMessage = document.getElementById('contact-message')
+
+
+const sendEmail = (e) =>{
+        e.preventDefault()
+
+        emailjs.sendForm('service_to0e8l7', 'template_jxa37mh', '#contact-form', '7pJBWRk81MB9WDZfU')
+        .then(() => {
+            contactMessage.textContent = 'Message sent successfully'
+        })
+}
+contactForm.addEventListener('submit', sendEmail)
